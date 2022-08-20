@@ -17,7 +17,8 @@ function App() {
     // prevent the form from refreshing the whole page
     e.preventDefault();
     // make a popup alert showing the "submitted" text
-    await fetch('http://localhost:5000/api/todos', {
+    const url = process.env.REACT_APP_URL+'/api/todos'
+    await fetch(url, {
           method: 'post',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
