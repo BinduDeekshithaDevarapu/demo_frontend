@@ -18,7 +18,7 @@ spec:
       - name: reactfrontend-container
         image: scott2srikanth/myfsdcc_frontend:latest
         ports:
-        - containerPort: 3001
+        - containerPort: 3000
         
 ---
 
@@ -32,5 +32,5 @@ spec:
     app: reactfrontend
   ports:
     - protocol: TCP
-      port: 3001
-      targetPort: 3001
+      port: 3000
+      targetPort: 3000
