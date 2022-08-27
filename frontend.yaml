@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: react-container
-        image: scott2srikanth/demo_f:latest
+        image: scott2srikanth/myfsdcc_frontend:latest
         ports:
         - containerPort: 3000
         

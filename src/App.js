@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Button } from "react-bootstrap";
 import { Container, Col, Row } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
 
 function App() {
 
