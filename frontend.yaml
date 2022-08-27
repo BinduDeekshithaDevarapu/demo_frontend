@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react_frontend-deployment
+  name: reactfrontend-deployment
   labels:
-    app: react_frontend
+    app: reactfrontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: react_frontend
+      app: reactfrontend
   template:
     metadata:
       labels:
-        app: react_frontend
+        app: reactfrontend
     spec:
       containers:
-      - name: react_frontend-container
+      - name: reactfrontend-container
         image: scott2srikanth/myfsdcc_frontend:latest
         ports:
         - containerPort: 3001
@@ -29,7 +29,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: react_frontend
+    app: reactfrontend
   ports:
     - protocol: TCP
       port: 3001
